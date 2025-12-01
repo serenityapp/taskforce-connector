@@ -177,7 +177,7 @@ export function getRedisClient(
         redisOptions: {
           username,
           password,
-          tls: process.env.REDIS_CLUSTER_TLS
+          tls: process.env.REDIS_USE_TLS
             ? {} // Use system defaults with proper cert validation
             : undefined,
         },
