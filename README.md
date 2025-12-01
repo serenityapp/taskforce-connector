@@ -6,6 +6,14 @@ Currently the connector supports [Bull](https://github.com/optimalbits/bull) and
 
 The connector is designed to be lightweight and using a minimal set of resources from the local queues.
 
+> [!IMPORTANT]
+> This repository is a fork of https://github.com/taskforcesh/taskforce-connector
+> The fork patches the connector to work with AWS MemoryDB (Redis-compatible service) whether in cluster or single-node mode.
+> Changes introduced might be too specific to warrant an upstream PR.
+> Use at your own risk.
+>
+> The simplest way to use it is using the prebuilt container image `ghcr.io/serenityapp/taskforce-connector:latest`.
+
 ## Install
 
 Using [yarn](https://yarnpkg.com)
